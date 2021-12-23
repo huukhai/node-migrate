@@ -6,6 +6,7 @@ type MigrationOptions = {
   migrationsDirectory?: string;
   filterFunction?: (migration: string) => boolean;
   sortFunction?: (migration1: Migration, migration2: Migration) => boolean;
+  context: Object
 };
 
 type NextFunction = () => void;
